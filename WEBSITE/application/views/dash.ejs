@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row ">
+        <div class="col">
+            <h1 class="mt-4">Dashboard</h1>
+            User:  <%= user %>
+        </div>
+        <div class="col ">
+            <a href="/user/logout" class="btn btn-secondary">Logout</a>
+        </div>
+    </div>
+<br>
+    <div class="row">
+        <p class="lead mb-3">Devices</p>
+    </div>
+    <div class="row devices">
+
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/public/js/dashboard.js"></script>
+
+
+

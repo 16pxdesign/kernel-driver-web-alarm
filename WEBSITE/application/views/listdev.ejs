@@ -1,0 +1,51 @@
+<style>
+    .box{background:#1aa85c}
+
+
+    @-o-keyframes fadeIt {
+        0%   { background-color: #db2c29; }
+        50%  { background-color: #db2c29; }
+        100% { background-color: #1aa85c; }
+    }
+    @keyframes fadeIt {
+        0%   { background-color: #db2c29; }
+        50%  { background-color: #db2c29; }
+        100% { background-color: #1aa85c; }
+    }
+
+    .backgroundAnimated{
+        background-image:none !important;
+        -o-animation: fadeIt 5s ease-in-out;
+        animation: fadeIt 5s ease-in-out;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row ">
+        <div class="col">
+            <h1 class="mt-4" id="deviceid"><%= devid %></h1>
+        </div>
+        <div class="col ">
+            <a href="/user/logout" class="btn btn-secondary">Logout</a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <p class="lead mb-3">Actions</p>
+    </div>
+    <div class="row actions">
+        <div class="box m-4 text-white  mb-3 " id="ARM"  ><div class="card-header">ARM</div><p class="time">-</p><p class="state">-</p>  </div>
+        <div class="box m-4 text-white  mb-3 " id="ALARM"  ><div class="card-header">ALARM</div><p class="time">-</p> <p class="state">-</p> </div>
+        <div class="box m-4 text-white  mb-3 " id="BUTTON"  ><div class="card-header">BUTTON</div><p class="time">-</p> </div>
+        <div class="box m-4 text-white  mb-3 " id="PIR"  ><div class="card-header">PIR</div><p class="time">-</p> </div>
+        <div class="box m-4 text-white  mb-3 " id="RESISTOR"  ><div class="card-header">LDR</div><p class="time">-</p> </div>
+        <div class="box m-4 text-white  mb-3 " id="DOOR"  ><div class="card-header">DOOR</div><p class="time">-</p> </div>
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/public/js/devacclist.js"></script>
+
+

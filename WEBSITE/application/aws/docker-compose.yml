@@ -1,0 +1,39 @@
+version: '3'
+services:
+  web:
+    image: wordpress
+    ports:
+      - "80:80"
+    links:
+      - mysql
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: wordP
+        awslogs-region: us-east-1
+        awslogs-stream-prefix: wordpress
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: passwordx
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: wordP
+        awslogs-region: us-east-1
+        awslogs-stream-prefix: mysql
+  admin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+
+    ports:
+      - 8080:80
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: wordP
+        awslogs-region: us-east-1
+        awslogs-stream-prefix: admin
