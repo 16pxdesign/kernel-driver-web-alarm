@@ -70,7 +70,7 @@ AWS Cluster
 ![image](https://user-images.githubusercontent.com/28375942/136124056-a7e964f3-8735-4fa5-8b91-02226e56ca71.png)
 
 Sensors
-![image](./Image/sens.gif)
+![image](./Images/sens.gif)
 
 Unarm
-![image](./Image/unarm.gif)
+![image](./Images/unarm.gif)
