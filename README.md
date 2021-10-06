@@ -66,11 +66,11 @@ passed to web sockets where are presented. User can also disable alarm using his
 password to defuse alarms. 
 
 # Overview
-AWS Cluster
+## AWS Cluster
 ![image](https://user-images.githubusercontent.com/28375942/136124056-a7e964f3-8735-4fa5-8b91-02226e56ca71.png)
 
-Sensors
+## Sensors
 ![image](./Images/sens.gif)
 
-Unarm
+## Unarm
 ![image](./Images/unarm.gif)
